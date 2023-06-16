@@ -1,0 +1,26 @@
+
+
+<div class="card" style="background-color:antiquewhite;" >
+    <form action="">
+        <div class="card-body">
+            <div class="mb-2">
+                <label for="" class="form-label">Nombre</label>
+                <input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" [(ngModel)]="persona.nombre">
+           </div>
+        
+           <div class="mb-2">
+            <label for="" class="form-label">Edad</label>
+            <input type="number" name="edad" class="form-control" placeholder="Ingrese su edad" min=0 [(ngModel)]="persona.edad">
+           </div>
+           <div class="text-center">
+            <button class="btn btn-primary mt-4 btn-lg">Enviar</button>
+           </div>
+    
+        </div>
+      
+    </form>
+  
+
+</div>
+
+{{persona  | json }}

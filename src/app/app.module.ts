@@ -11,6 +11,9 @@ import { BuclesComponent } from './bucles/bucles.component';
 import { SwitchComponent } from './switch/switch.component';
 import { MesDiaComponent } from './mes-dia/mes-dia.component';
 import { MesComponent } from './mes/mes.component';
+import { Formulario2Component } from './formulario2/formulario2.component';
+
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -21,11 +24,13 @@ import { MesComponent } from './mes/mes.component';
     BuclesComponent,
     SwitchComponent,
     MesDiaComponent,
-    MesComponent
+    MesComponent,
+    Formulario2Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
